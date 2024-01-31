@@ -1,0 +1,10 @@
+<p>Load Data!</p>
+
+
+<button (click)="callApi($event)"  mat-raised-button color="warn">Get Data</button>
+
+
+<br><br>
+<div *ngFor="let i of getImg" style="display: inline-flex;">
+    <img src="{{i.url}}" width="60" height="60" >
+</div>
